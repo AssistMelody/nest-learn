@@ -4,44 +4,30 @@ import {
   Post,
   Get,
   Put,
-  Request,
-  Response,
-  Headers,
+  Query,
+  Body,
 } from '@nestjs/common';
-import { Request as Req, Response as Res } from 'express';
-// import { UserService } from './user.service';
+// import { Request as Req, Response as Res } from 'express';
+import { UserService } from './user.service';
+import { User } from './user.entity';
 
 @Controller('user')
 export class UserController {
-  constructor() {}
+  constructor(public userService: UserService) {}
 
   @Get('find')
   findAll(): any {
-    // const resut = this.userService.getList();
-    return 'resut';
+    return this.userService.getList();
   }
 
   @Post('create')
-  create(
-    @Request() req: Req,
-    @Response() res: Res,
-    @Headers('aaa') headers,
-  ): any {
-    return res.status(201).json({
-      id: req.ip,
-      header: headers,
-      methods: req.method,
-      path: req.path,
-      params: req.params,
-      query: req.query,
-      body: req.body,
-    });
+  create(@Body() body: User): any {
+    return this.userService.create(body);
   }
 
   @Get('findOne')
-  findOne(): any {
-    return 'xxxx';
-    // return this.userService.getList();
+  findOne(@Query('id') id): any {
+    return this.userService.findById(id);
   }
 
   @Put('update')
