@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Module } from '@nestjs/common';
 import { UserModule } from './user/user.module';
+import { ConfigModule } from '@nestjs/config';
+console.log(process.env);
 
 @Module({
   imports: [
@@ -19,6 +21,10 @@ import { UserModule } from './user/user.module';
     //   entities: [__dirname + '/**/*.entity{.ts,.js}'],
     //   synchronize: true,
     // }),
+    ConfigModule.forRoot({
+      envFilePath: './env/.dev.env',
+      isGlobal: true,
+    }),
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
