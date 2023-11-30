@@ -11,7 +11,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    console.log(this.config.get('DATABASE_DB_NAME'));
     return this.appService.getHello();
   }
 }
