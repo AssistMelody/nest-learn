@@ -6,11 +6,13 @@ import { Module } from '@nestjs/common';
 import { UserModule } from './user/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 
+const isProd = process.env.NODE_ENV == 'prod';
+
 @Module({
   imports: [
     UserModule,
     ConfigModule.forRoot({
-      envFilePath: `./env/.${process.env.NODE_ENV}.env`,
+      envFilePath: `./${isProd ? 'dist/' : ''}env/.${process.env.NODE_ENV}.env`,
       isGlobal: true,
     }),
 
@@ -27,7 +29,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           database: config.get<string>('DATABASE_DB_NAME'),
           logging: true,
           entities: [__dirname + '/**/*.entity{.ts,.js}'],
-          synchronize: process.env.NODE_ENV != 'prod',
+          synchronize: isProd,
         };
       },
     }),
