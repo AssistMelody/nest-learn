@@ -1,1 +1,0 @@
-cp -R ./env ./dist
