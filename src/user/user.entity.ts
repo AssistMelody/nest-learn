@@ -5,10 +5,11 @@ import {
   CreateDateColumn,
   UpdateDateColumn,
 } from 'typeorm';
+import { UserEntity as IUserEntity } from './dtos/user.dto';
 
 // 表名
 @Entity({ name: 'users' })
-export class User {
+export class UserEntity implements IUserEntity {
   @PrimaryGeneratedColumn()
   id?: number;
 

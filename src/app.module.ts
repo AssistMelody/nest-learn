@@ -8,13 +8,14 @@ import { Module } from '@nestjs/common';
 import { UserModule } from './user/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 // import { LoggerMiddleware } from './core/middleware/logger.middleware';
-import { LoggerModule } from './core/modules/logger/logger.module';
+import { CoreModule } from './core/modules/core.module';
 
 const isProd = process.env.NODE_ENV == 'prod';
 
 @Module({
   imports: [
     UserModule,
+
     ConfigModule.forRoot({
       envFilePath: `./${isProd ? 'dist/' : ''}env/.${process.env.NODE_ENV}.env`,
       isGlobal: true,
@@ -58,7 +59,7 @@ const isProd = process.env.NODE_ENV == 'prod';
       },
     }),
 
-    LoggerModule,
+    CoreModule,
   ],
   controllers: [AppController],
   providers: [AppService],

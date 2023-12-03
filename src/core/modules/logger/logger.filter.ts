@@ -32,7 +32,7 @@ export class LoggerFilter implements ExceptionFilter {
       timestamp: new Date().toISOString(),
       path: request.url,
       method: request.method,
-      message: exception.message,
+      message: exception.getResponse().message,
     };
     this.logger.error('http error', errorBody);
     response.status(status).json(errorBody);
