@@ -9,6 +9,7 @@ export class HttpModule {
     return {
       module: HttpModule,
       imports: [ConfigModule],
+      exports: [ServiceNameService],
       providers: [
         {
           provide: 'HTTP_OPTIONS',

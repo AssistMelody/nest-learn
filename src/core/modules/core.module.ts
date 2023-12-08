@@ -3,6 +3,8 @@ import { LoggerModule } from './logger/logger.module';
 import { ShareModule } from './share/shared.module';
 import { HttpModule } from './http/http.module';
 import { ConfigService } from '@nestjs/config';
+import { APP_GUARD } from '@nestjs/core';
+import { VisitGuard } from '../guards/visit.guard';
 
 @Global()
 @Module({
@@ -17,7 +19,12 @@ import { ConfigService } from '@nestjs/config';
       },
     }),
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_GUARD,
+      useClass: VisitGuard,
+    },
+  ],
   exports: [],
 })
 export class CoreModule {}

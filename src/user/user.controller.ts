@@ -24,6 +24,8 @@ import {
 } from './dtos/user.dto';
 import { InjectQueue } from '@nestjs/bull';
 import { Queue } from 'bull';
+import { ServiceNameService } from 'src/core/modules/http/test.service';
+import { IsProtect } from 'src/core/decorators';
 // import { plainToClass } from 'class-transformer';
 
 @Controller('user')
@@ -31,6 +33,7 @@ export class UserController {
   constructor(
     public userService: UserService,
     private logger: LoggerService,
+    private browser: ServiceNameService,
     @InjectQueue('audio') private readonly audioQueue: Queue,
   ) {}
 
@@ -99,5 +102,21 @@ export class UserController {
     return await this.audioQueue.add('transcode', {
       file: 'audio.mp3',
     });
+  }
+
+  // @IsProtect()
+  @Get('saveImage')
+  async saveImage(@Query('link') link: string): Promise<any> {
+    try {
+      const client = await this.browser.pool.acquire();
+      const page = await client.newPage();
+      await page.goto(link);
+      return {
+        code: 200,
+        message: '保存成功',
+      };
+    } catch (error) {
+      throw new Exception(100, error.message);
+    }
   }
 }
