@@ -9,6 +9,7 @@ import { UserModule } from './user/user.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 // import { LoggerMiddleware } from './core/middleware/logger.middleware';
 import { CoreModule } from './core/modules/core.module';
+// import { BullModule } from '@nestjs/bull';
 
 const isProd = process.env.NODE_ENV == 'prod';
 

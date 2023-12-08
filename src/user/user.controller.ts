@@ -6,24 +6,32 @@ import {
   Query,
   Body,
   ForbiddenException,
-  ParseIntPipe,
   Patch,
   Param,
-  UsePipes,
-  ValidationPipe,
+  UseInterceptors,
+  ClassSerializerInterceptor,
 } from '@nestjs/common';
 // import { Request as Req, Response as Res } from 'express';
 import { UserService } from './user.service';
 // import { User } from './user.entity';
 import { Exception } from 'src/utils/exception';
 import { LoggerService } from 'src/core/modules/logger/services/logger.service';
-import { CreateUserDto, UpdateUserDto, UserEntity } from './dtos/user.dto';
+import {
+  CreateUserDto,
+  GetOneUserDto,
+  UpdateUserDto,
+  UserEntity,
+} from './dtos/user.dto';
+import { InjectQueue } from '@nestjs/bull';
+import { Queue } from 'bull';
+// import { plainToClass } from 'class-transformer';
 
 @Controller('user')
 export class UserController {
   constructor(
     public userService: UserService,
     private logger: LoggerService,
+    @InjectQueue('audio') private readonly audioQueue: Queue,
   ) {}
 
   @Get('find')
@@ -42,15 +50,8 @@ export class UserController {
   }
 
   @Get('findOne')
-  findOne(
-    @Query(
-      'id',
-      new ParseIntPipe({
-        exceptionFactory: () => new Exception(200002, '请求参数错误'),
-      }),
-    )
-    id,
-  ): any {
+  @UseInterceptors(ClassSerializerInterceptor)
+  findOne(@Query('id') id): any {
     console.debug('user', typeof id);
     if (id == 1) {
       throw new ForbiddenException();
@@ -58,13 +59,14 @@ export class UserController {
     if (id == 2) {
       throw new Exception(200001, 'asdasd');
     }
-    return this.userService.findById(id);
+    return this.userService.findById(id).then((res) => {
+      console.log(new GetOneUserDto(res));
+      return new GetOneUserDto(res);
+    });
   }
 
-  @Patch('update/:id')
-  @UsePipes(new ValidationPipe({ transform: true }))
+  @Patch('/:id')
   update(@Param('id') id: number, @Body() body: UpdateUserDto): object {
-    console.debug(typeof body.age);
     return this.userService.update(id, body).then(() => {
       return {
         code: 200,
@@ -73,8 +75,29 @@ export class UserController {
     });
   }
 
-  @Delete('delete')
-  delete(): string {
-    return 'delete';
+  @Delete('/:id')
+  delete(@Param('id') id: number) {
+    return this.userService
+      .delete(id)
+      .then(() => {
+        return {
+          code: 200,
+          message: '删除成功',
+        };
+      })
+      .catch((err) => {
+        this.logger.error('user', err);
+        return {
+          code: 500,
+          message: '删除失败',
+        };
+      });
+  }
+
+  @Post('transcode')
+  async transcode() {
+    return await this.audioQueue.add('transcode', {
+      file: 'audio.mp3',
+    });
   }
 }

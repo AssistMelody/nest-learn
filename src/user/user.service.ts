@@ -15,14 +15,22 @@ export class UserService {
   }
 
   async findById(id: number): Promise<User> {
-    return await this.userRepository.findOne({ where: { id } });
+    return await this.userRepository.findOne({
+      where: { id },
+      select: ['id', 'age', 'name'],
+    });
   }
 
   async create(data: UserEntity): Promise<InsertResult> {
     return await this.userRepository.insert(data);
   }
 
-  update(id: number, data: any) {
+  update(id: number, data: Partial<User>) {
+    data.updatedAt = new Date();
     return this.userRepository.update(id, data);
+  }
+
+  delete(id: number) {
+    return this.userRepository.delete(id);
   }
 }

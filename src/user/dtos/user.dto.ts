@@ -1,4 +1,17 @@
-import { IsNotEmpty, Matches } from 'class-validator';
+import {
+  IsDecimal,
+  IsDivisibleBy,
+  IsIn,
+  IsInt,
+  IsNotEmpty,
+  IsNumber,
+  IsNumberString,
+  IsPositive,
+  IsString,
+  Matches,
+} from 'class-validator';
+import { Exclude, Expose, Transform, Type } from 'class-transformer';
+
 import { PartialType } from '@nestjs/mapped-types';
 
 export interface User {
@@ -16,35 +29,38 @@ export class CreateUserDto implements User {
   @IsNotEmpty({
     message: 'name 不能为空',
   })
-  @Matches(/^[a-zA-Z0-9_-]{3,16}$/, {
-    message: 'name 格式不正确',
-  })
   name: string;
 
   @IsNotEmpty({
     message: 'age 不能为空',
   })
-  // @IsNumber(
-  //   {},
-  //   {
-  //     message: 'age 必须是数字',
-  //   },
-  // )
-  @Matches(/^[1-9][0-9]{1,2}$/, {
+  // @Type(() => Number)
+  // @IsInt({
+  //   message: 'age 必须是数字',
+  // })
+  @Matches(/^[1-9]([0-9]{0,1})$/, {
     message: '年龄格式不正确',
   })
   age: number;
 }
 
-export class UpdateUserDto extends PartialType(CreateUserDto) {
-  // @IsNotEmpty({
-  //   message: 'id 不能为空',
-  // })
-  // @IsNumber(
-  //   {},
-  //   {
-  //     message: 'id 必须是数字',
-  //   },
-  // )
-  // id: number;
+export class UpdateUserDto extends PartialType(CreateUserDto) {}
+
+export class GetOneUserDto extends CreateUserDto {
+  @Exclude()
+  age: number;
+
+  @Expose()
+  get test(): string {
+    return this.age + this.name;
+  }
+  @Transform(({ value }) => {
+    return value + 10;
+  })
+  @Expose({ name: 'uid' })
+  id: number;
+  constructor(partial: Partial<UserEntity>) {
+    super();
+    Object.assign(this, partial);
+  }
 }
