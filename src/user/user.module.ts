@@ -11,10 +11,6 @@ import { AudioProcessor } from './user.processor';
     TypeOrmModule.forFeature([UserEntity]),
     BullModule.registerQueue({
       name: 'audio',
-      redis: {
-        host: 'localhost',
-        port: 6379,
-      },
     }),
   ],
   providers: [UserService, AudioProcessor],

@@ -10,6 +10,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 // import { LoggerMiddleware } from './core/middleware/logger.middleware';
 import { CoreModule } from './core/modules/core.module';
 // import { BullModule } from '@nestjs/bull';
+import { ImageModule } from './image/image.module';
 
 const isProd = process.env.NODE_ENV == 'prod';
 
@@ -54,13 +55,16 @@ const isProd = process.env.NODE_ENV == 'prod';
           password: config.get<string>('DATABASE_PASSWORD'),
           database: config.get<string>('DATABASE_DB_NAME'),
           logging: true,
-          entities: [__dirname + '/**/*.entity{.ts,.js}'],
-          synchronize: isProd,
+          // entities: [__dirname + '/**/*.entity{.ts,.js}'],
+          synchronize: !isProd,
+          autoLoadEntities: true,
         };
       },
     }),
 
     CoreModule,
+
+    ImageModule,
   ],
   controllers: [AppController],
   providers: [AppService],

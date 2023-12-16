@@ -1,4 +1,4 @@
-import { Process, Processor } from '@nestjs/bull';
+import { OnQueueCompleted, Process, Processor } from '@nestjs/bull';
 import { Logger } from '@nestjs/common';
 import { Job } from 'bull';
 
@@ -17,8 +17,17 @@ export class AudioProcessor {
   @Process('transcode')
   async handleTranscode(job: Job) {
     this.logger.debug('Start transcoding...');
-    this.logger.debug(job.data);
-    const result = await test(Math.random() * 5000);
+    this.logger.debug(job);
+    const result = await test(Math.random() * 10000);
+    job.progress(10);
     this.logger.debug('Transcoding completed' + result);
+    return {
+      complete: true,
+    };
+  }
+
+  @OnQueueCompleted()
+  handleComplete(job: Job, result: any) {
+    this.logger.debug(job.data, job.id, result);
   }
 }

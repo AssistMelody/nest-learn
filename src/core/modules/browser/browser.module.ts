@@ -1,22 +1,22 @@
 import { DynamicModule, Global, Module } from '@nestjs/common';
-import { HttpService } from './http.service';
 import { ConfigModule } from '@nestjs/config';
+import { BrowserPoolService } from './browser-pool.service';
 
 @Global()
 @Module({})
-export class HttpModule {
+export class BrowserPoolModule {
   static forRoot(options: any): DynamicModule {
     return {
-      module: HttpModule,
+      module: BrowserPoolModule,
       imports: [ConfigModule],
-      exports: [HttpService],
+      exports: [BrowserPoolService],
       providers: [
         {
-          provide: 'HTTP_CONFIG',
+          provide: 'config',
           useFactory: options.factory,
           inject: options.inject,
         },
-        HttpService,
+        BrowserPoolService,
       ],
     };
   }
