@@ -1,0 +1,12 @@
+<section class='mkt-image-text-overlay'>
+  <img
+    src='{{standardImageTextOverlay.block.image.uploadDestinationId}}'
+    alt=''
+  />
+  <div class="image-text-container">
+    <h4>{{standardImageTextOverlay.block.headline.value}}</h4>
+    {{#each standardImageTextOverlay.block.body.textList}}
+      {{> text value=value }}
+    {{/each}}
+  </div>
+</section>

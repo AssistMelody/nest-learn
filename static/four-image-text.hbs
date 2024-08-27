@@ -1,0 +1,43 @@
+<section class='mkt-four-image-text'>
+  <h3>{{standardFourImageText.headline.value}}</h3>
+  <div class='image-text-layer'>
+    <div>
+      <img src="{{standardFourImageText.block1.image.uploadDestinationId}}">
+      <h4 class='sub-title'>
+        {{standardFourImageText.block1.headline.value}}
+      </h4>
+      {{#each standardFourImageText.block1.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+    <div>
+      
+      <img src="{{standardFourImageText.block2.image.uploadDestinationId}}">
+      <h4 class='sub-title'>
+        {{standardFourImageText.block2.headline.value}}
+      </h4>
+      {{#each standardFourImageText.block2.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+    <div>
+      
+      <img src="{{standardFourImageText.block3.image.uploadDestinationId}}">
+      <h4 class='sub-title'>
+        {{standardFourImageText.block3.headline.value}}
+      </h4>
+      {{#each standardFourImageText.block3.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+    <div>
+      <img src="{{standardFourImageText.block4.image.uploadDestinationId}}">
+      <h4 class='sub-title'>
+        {{standardFourImageText.block4.headline.value}}
+      </h4>
+      {{#each standardFourImageText.block4.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+  </div>
+</section>

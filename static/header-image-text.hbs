@@ -1,0 +1,12 @@
+<section class="mkt-header-image-text">
+  <h3>
+    {{standardHeaderImageText.headline.value}}
+  </h3>
+  <img src="{{standardHeaderImageText.block.image.uploadDestinationId}}">
+  <h4>{{standardHeaderImageText.block.headline.value}}</h4>
+  <div>
+    {{#each standardHeaderImageText.block.body.textList}}
+      {{> text value=value }}
+    {{/each}}
+  </div>
+</section>

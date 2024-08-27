@@ -1,0 +1,36 @@
+<section class='mkt-comparison-table'>
+  <table>
+    <tbody>
+      <tr>
+        <td class="fixed-column holder"></td>
+        {{#each standardComparisonTable.productColumns}}
+          <td>
+            <a href="http://www.baidu.com">
+              <img src="{{image.uploadDestinationId}}" alt="">
+            </a>
+          </td>
+        {{/each}}
+      </tr>
+      
+      <tr>
+        <td class="fixed-column holder"></td>
+        {{#each standardComparisonTable.productColumns}}
+          <td> 
+            <a href="http://www.baidu.com">{{title}}</a>
+          </td>
+        {{/each}}
+      </tr>
+
+      {{#each standardComparisonTable.metricRowLabels}}
+        <tr class="metrics-row">
+          <td class="fixed-column">{{value}}</td>
+          {{#each ../standardComparisonTable.productColumns}}
+            {{#with (lookup metrics @../index)}}
+              <td class="{{#if ../highlight}}highlight{{/if}}">{{value}}</td>
+            {{/with}}
+          {{/each}}
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>

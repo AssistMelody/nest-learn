@@ -1,0 +1,11 @@
+<section class="mkt-single-side-image {{#if (isRight standardSingleSideImage.imagePositionType)}}reverse{{/if}}">
+  <div class="image">
+    <img src="{{standardSingleSideImage.block.image.uploadDestinationId}}">
+  </div>
+  <div class="desc">
+    <h3>{{standardSingleSideImage.block.headline.value}}</h3>
+    {{#each standardSingleSideImage.block.body.textList}}
+      {{> text value=value }}
+    {{/each}}
+  </div>
+</section>

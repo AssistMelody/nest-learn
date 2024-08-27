@@ -8,11 +8,11 @@ export class LoggerService {
     @Inject(WINSTON_MODULE_PROVIDER) private readonly logger: Logger,
   ) {}
 
-  info(label: string, message: any) {
-    this.logger.info(label, message);
+  info(message: any) {
+    this.logger.info(message);
   }
 
-  error(label: string, message: any) {
-    this.logger.error(label, message);
+  error(message: any) {
+    this.logger.error(message);
   }
 }

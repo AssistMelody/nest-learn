@@ -11,6 +11,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CoreModule } from './core/modules/core.module';
 // import { BullModule } from '@nestjs/bull';
 import { ImageModule } from './image/image.module';
+import { RenderController } from './render/render.controller';
 
 const isProd = process.env.NODE_ENV == 'prod';
 
@@ -66,7 +67,7 @@ const isProd = process.env.NODE_ENV == 'prod';
 
     ImageModule,
   ],
-  controllers: [AppController],
+  controllers: [AppController, RenderController],
   providers: [AppService],
 })
 export class AppModule {}

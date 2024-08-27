@@ -1,0 +1,1291 @@
+{
+  "contentDocument": {
+    "name": "Content document example",
+    "contentType": "EMC",
+    "contentSubType": null,
+    "locale": "en-US",
+    "contentModuleList": [
+      {
+        "contentModuleType": "STANDARD_SINGLE_SIDE_IMAGE",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": {
+          "imagePositionType": "RIGHT",
+          "block": {
+            "headline": {
+              "value": "STANDARD_SINGLE_SIDE_IMAGE",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "<ul><li>ipsum dolor <b>sitipsum dolor sitipsum</b> dolor sit </li><li>ipsum dolor sit amet</li></ul> <i>consectetur adipiscing elit. Nunc</i> <span class='underline'>faucibus neque auctor faucibus pretium.</span>  <ol> <li>Quisque sed blandit nunc. </li><li>Quisque sed blandit nunc. </li> </ol> Pellentesque malesuada ",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 18,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 56,
+                      "length": 1,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 102,
+                      "length": 26,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_FOUR_IMAGE_TEXT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": {
+          "headline": {
+            "value": "STANDARD_FOUR_IMAGE_TEXT",
+            "decoratorSet": []
+          },
+          "block1": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "<ul><li>ipsum dolor <b>sitipsum dolor sitipsum</b> dolor sit </li><li>ipsum dolor sit amet</li></ul> <i>consectetur adipiscing elit. Nunc</i> <span class='underline'>faucibus neque auctor faucibus pretium.</span>  <ol> <li>Quisque sed blandit nunc. </li><li>Quisque sed blandit nunc. </li> </ol>",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 18,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 56,
+                      "length": 1,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 102,
+                      "length": 26,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block2": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 128,
+                      "length": 58,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block3": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block4": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum - dolor sit amet, consectetur adipiscing elit. Nunc faucibus - neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 59,
+                      "length": 16,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 13,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 0,
+                      "length": 103,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_FOUR_IMAGE_TEXT_QUADRANT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": {
+          "headline": {
+            "value": "STANDARD_FOUR_IMAGE_TEXT",
+            "decoratorSet": []
+          },
+          "block1": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "<ul><li>ipsum dolor <b>sitipsum dolor sitipsum</b> dolor sit </li><li>ipsum dolor sit amet</li></ul> <i>consectetur adipiscing elit. Nunc</i> <span class='underline'>faucibus neque auctor faucibus pretium.</span>  <ol> <li>Quisque sed blandit nunc. </li><li>Quisque sed blandit nunc. </li> </ol>",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 18,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 56,
+                      "length": 1,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 102,
+                      "length": 26,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block2": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 128,
+                      "length": 58,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block3": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block4": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum - dolor sit amet, consectetur adipiscing elit. Nunc faucibus - neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 59,
+                      "length": 16,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 13,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 0,
+                      "length": 103,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_THREE_IMAGE_TEXT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": {
+          "headline": {
+            "value": "STANDARD_FOUR_IMAGE_TEXT",
+            "decoratorSet": []
+          },
+          "block1": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "<ul><li>ipsum dolor <b>sitipsum dolor sitipsum</b> dolor sit </li><li>ipsum dolor sit amet</li></ul> <i>consectetur adipiscing elit. Nunc</i> <span class='underline'>faucibus neque auctor faucibus pretium.</span>  <ol> <li>Quisque sed blandit nunc. </li><li>Quisque sed blandit nunc. </li> </ol>",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 18,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 56,
+                      "length": 1,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 102,
+                      "length": 26,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block2": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 128,
+                      "length": 58,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block3": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 57,
+                      "length": 70,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 102,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_UNORDERED",
+                      "offset": 0,
+                      "length": 127,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "block4": {
+            "headline": {
+              "value": "Lorem ipsum dolor sit amet",
+              "decoratorSet": []
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum - dolor sit amet, consectetur adipiscing elit. Nunc faucibus - neque auctor faucibus pretium. Quisque sed blandit nunc.",
+                  "decoratorSet": [
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "STYLE_UNDERLINE",
+                      "offset": 59,
+                      "length": 16,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 59,
+                      "length": 72,
+                      "depth": 1
+                    },
+                    {
+                      "type": "LIST_ITEM",
+                      "offset": 0,
+                      "length": 131,
+                      "depth": 0
+                    },
+                    {
+                      "type": "STYLE_BOLD",
+                      "offset": 0,
+                      "length": 13,
+                      "depth": 0
+                    },
+                    {
+                      "type": "LIST_ORDERED",
+                      "offset": 106,
+                      "length": 25,
+                      "depth": 2
+                    }
+                  ]
+                },
+                {
+                  "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus.",
+                  "decoratorSet": [
+                    {
+                      "type": "STYLE_ITALIC",
+                      "offset": 0,
+                      "length": 103,
+                      "depth": 0
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "contentModuleType": "STANDARD_TEXT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": {
+          "headline": {
+            "value": "STANDARD_TEXT",
+            "decoratorSet": []
+          },
+          "body": {
+            "textList": [
+              {
+                "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus. Pellentesque dictum interdum turpis eget condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin maximus tincidunt vehicula. Integer id nibh viverra, euismod odio non, convallis mi.",
+                "decoratorSet": []
+              }
+            ]
+          }
+        },
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_TECH_SPECS",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": {
+          "headline": {
+            "value": "STANDARD_TECH_SPECS",
+            "decoratorSet": []
+          },
+          "specificationList": [
+            {
+              "label": {
+                "value": "Spec 1",
+                "decoratorSet": []
+              },
+              "description": {
+                "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. ",
+                "decoratorSet": []
+              }
+            },
+            {
+              "label": {
+                "value": "Spec Pellentesque Pellentesque 2",
+                "decoratorSet": []
+              },
+              "description": {
+                "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. ",
+                "decoratorSet": []
+              }
+            },
+            {
+              "label": {
+                "value": "Spec 3",
+                "decoratorSet": []
+              },
+              "description": {
+                "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. ",
+                "decoratorSet": []
+              }
+            },
+            {
+              "label": {
+                "value": "Spec 4",
+                "decoratorSet": []
+              },
+              "description": {
+                "value": "Pellentesque malesuada lorem vitae justo efficitur viverra. ",
+                "decoratorSet": []
+              }
+            }
+          ],
+          "tableCount": 2
+        },
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_COMPANY_LOGO",
+        "standardCompanyLogo": {
+          "companyLogo": {
+            "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+          }
+        },
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_HEADER_IMAGE_TEXT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": {
+          "headline": {
+            "value": "STANDARD_HEADER_IMAGE_TEXT",
+            "decoratorSet": []
+          },
+          "block": {
+            "headline": {
+              "value": "header image text subtitle",
+              "decoratorSet": []
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus"
+                }
+              ]
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            }
+          }
+        },
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_PRODUCT_DESCRIPTION",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": {
+          "body": {
+            "textList": [
+              {
+                "value": "<b>product description</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus"
+              }
+            ]
+          }
+        },
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_IMAGE_TEXT_OVERLAY",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": {
+          "block": {
+            "headline": {
+              "value": "STANDARD_IMAGE_TEXT_OVERLAY",
+              "decoratorSet": []
+            },
+            "body": {
+              "textList": [
+                {
+                  "value": "<b>product description</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus"
+                }
+              ]
+            },
+            "image": {
+              "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+            }
+          }
+        },
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_COMPARISON_TABLE",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": {
+          "productColumns": [
+            {
+              "position": 1,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 239,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 478,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 89,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "Lamp"
+              },
+              "title": "Blue Lamp",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": true,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "dolor sit amet"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            },
+            {
+              "position": 2,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 287,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 574,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 128,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "Chair"
+              },
+              "title": "Tan chair",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": false,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "dolor sit amet"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            },
+            {
+              "position": 3,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 236,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 471,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 51,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "Wood lamp"
+              },
+              "title": "Modern lamp",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": false,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "consectetur adipiscing elit"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            },
+            {
+              "position": 4,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 229,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 457,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 83,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "Pendant"
+              },
+              "title": "Pendant lamp",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": false,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "consectetur adipiscing elit"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            },
+            {
+              "position": 5,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 235,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 470,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 96,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "lamp"
+              },
+              "title": "Coral lamp",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": false,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "lorem vitae justo"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            },
+            {
+              "position": 6,
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png",
+                "imageCropSpecification": {
+                  "size": {
+                    "width": {
+                      "value": 236,
+                      "units": "pixels"
+                    },
+                    "height": {
+                      "value": 472,
+                      "units": "pixels"
+                    }
+                  },
+                  "offset": {
+                    "x": {
+                      "value": 87,
+                      "units": "pixels"
+                    },
+                    "y": {
+                      "value": 0,
+                      "units": "pixels"
+                    }
+                  }
+                },
+                "altText": "lamp"
+              },
+              "title": "Desk lamp",
+              "asin": "ZZZZZZZZZZ",
+              "highlight": false,
+              "metrics": [
+                {
+                  "position": 1,
+                  "value": "lorem vitae justo"
+                },
+                {
+                  "position": 2,
+                  "value": "✔"
+                }
+              ]
+            }
+          ],
+          "metricRowLabels": [
+            {
+              "position": 1,
+              "value": "Lorem ipsum"
+            },
+            {
+              "position": 2,
+              "value": "Etiam euismod "
+            }
+          ]
+        },
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": null,
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      },
+      {
+        "contentModuleType": "STANDARD_MULTIPLE_IMAGE_TEXT",
+        "standardCompanyLogo": null,
+        "standardComparisonTable": null,
+        "standardFourImageText": null,
+        "standardFourImageTextQuadrant": null,
+        "standardHeaderImageText": null,
+        "standardImageSidebar": null,
+        "standardImageTextOverlay": null,
+        "standardMultipleImageText": {
+          "blocks": [
+            {
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+              },
+              "headline": {
+                "value": "STANDARD",
+                "decoratorSet": []
+              },
+              "body": {
+                "textList": [
+                  {
+                    "value": "<b>product description</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus neque auctor faucibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus"
+                  }
+                ]
+              },
+              "caption": {
+                "value": "STANDARD",
+                "decoratorSet": []
+              }
+            },
+            {
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+              },
+              "headline": {
+                "value": "STANDARD",
+                "decoratorSet": []
+              },
+              "body": {
+                "textList": [
+                  {
+                    "value": "<b>product description</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc famagna ultrices finibus"
+                  }
+                ]
+              },
+              "caption": {
+                "value": "STANDARD",
+                "decoratorSet": []
+              }
+            },
+            {
+              "image": {
+                "uploadDestinationId": "http://192.10.20.247:3000/static/2.png"
+              },
+              "headline": {
+                "value": "STANDARD_IMAGE_TEXT_OVERLAY",
+                "decoratorSet": []
+              },
+              "body": {
+                "textList": [
+                  {
+                    "value": "<b>product description</b>ibus pretium. Quisque sed blandit nunc. Pellentesque malesuada lorem vitae justo efficitur viverra. Integer ut mollis lacus, id pretium tellus. Fusce elementum molestie libero sit amet ullamcorper. Etiam euismod consectetur magna ultrices finibus"
+                  }
+                ]
+              },
+              "caption": {
+                "value": "STANDARD",
+                "decoratorSet": []
+              }
+            }
+          ]
+        },
+        "standardProductDescription": null,
+        "standardSingleImageHighlights": null,
+        "standardSingleImageSpecsDetail": null,
+        "standardSingleSideImage": null,
+        "standardTechSpecs": null,
+        "standardText": null,
+        "standardThreeImageText": null
+      }
+    ]
+  }
+}

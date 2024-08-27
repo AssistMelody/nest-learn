@@ -10,6 +10,9 @@ import {
   Param,
   UseInterceptors,
   ClassSerializerInterceptor,
+  Headers,
+  Res,
+  StreamableFile,
 } from '@nestjs/common';
 // import { Request as Req, Response as Res } from 'express';
 import { UserService } from './user.service';
@@ -26,7 +29,8 @@ import { InjectQueue } from '@nestjs/bull';
 import { Queue } from 'bull';
 import { IsProtect } from 'src/core/decorators';
 // import { plainToClass } from 'class-transformer';
-
+import { createReadStream } from 'fs';
+import { join } from 'path';
 @Controller('user')
 export class UserController {
   constructor(
@@ -38,6 +42,14 @@ export class UserController {
   @Get('find')
   findAll(): any {
     return this.userService.getList();
+  }
+
+  @Post('test')
+  test(@Headers('Authorization') header): any {
+    const stream = createReadStream(join(process.cwd(), 'response.png'), {
+      encoding: 'utf-8',
+    });
+    return new StreamableFile(stream);
   }
 
   @Post('create')
@@ -87,7 +99,7 @@ export class UserController {
         };
       })
       .catch((err) => {
-        this.logger.error('user', err);
+        this.logger.error(err);
         return {
           code: 500,
           message: '删除失败',

@@ -1,0 +1,11 @@
+<section class="mkt-tech-specs">
+  <h3>{{standardTechSpecs.headline.value}}</h3>
+  <div class="tech-specs-wrap">
+    {{#each standardTechSpecs.specificationList}}
+    <div class="tech-specs-item">
+      <div><b>{{label.value}}</b></div>
+      <div>{{> text value=description.value}}</div>
+    </div>
+    {{/each}}
+  </div>
+</section>

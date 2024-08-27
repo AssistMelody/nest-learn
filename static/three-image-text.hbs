@@ -1,0 +1,32 @@
+<section class='mkt-three-image-text'>
+  <h3>{{standardThreeImageText.headline.value}}</h3>
+  <div class='image-text-layer'>
+    <div>
+      <img src="{{standardThreeImageText.block1.image.uploadDestinationId}}">
+      <h4>
+        {{standardThreeImageText.block1.headline.value}}
+      </h4>
+      {{#each standardThreeImageText.block1.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+    <div>
+      <img src="{{standardThreeImageText.block2.image.uploadDestinationId}}">
+      <h4>
+        {{standardThreeImageText.block2.headline.value}}
+      </h4>
+      {{#each standardThreeImageText.block2.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+    <div>
+      <img src="{{standardThreeImageText.block3.image.uploadDestinationId}}">
+      <h4>
+        {{standardThreeImageText.block3.headline.value}}
+      </h4>
+      {{#each standardThreeImageText.block3.body.textList}}
+        {{> text value=value }}
+      {{/each}}
+    </div>
+  </div>
+</section>

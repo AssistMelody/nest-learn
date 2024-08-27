@@ -1,0 +1,8 @@
+<section class="mkt-text">
+  <h3>
+    {{standardText.headline.value}}
+  </h3>
+  {{#each standardText.body.textList}}
+    {{> text value=value }}
+  {{/each}}
+</section>

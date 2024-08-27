@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rich Text Component</title>
+  <script src="./invoke-aplus.js"></script>
+</head>
+
+<body>
+  <rich-text-component></rich-text-component>
+  <!-- rich-text-component.html -->
+  <template id="rich-text-template">
+    <style>
+      /* Add any custom styles for your rich text here */
+      p {
+        color: blue;
+        font-size: 18px;
+      }
+    </style>
+    <div id="rich-text-container"></div>
+  </template>
+
+  <script>
+    class RichTextComponent extends HTMLElement {
+      constructor() {
+        super();
+
+        const template = document.getElementById('rich-text-template').content;
+        const shadowRoot = this.attachShadow({ mode: 'open' });
+        shadowRoot.appendChild(template.cloneNode(true));
+
+        // Access the container element in the shadow DOM
+        this.richTextContainer = shadowRoot.getElementById('rich-text-container');
+        this.richTextContainer.innerHTML = '<b>Rich Text Component</b><i>222</i><script>alert(2)<\/script>';
+      }
+
+      connectedCallback() {
+        console.log(this);
+      }
+
+    }
+    customElements.define('rich-text-component', RichTextComponent);
+
+  </script>
+</body>
+
+</html>

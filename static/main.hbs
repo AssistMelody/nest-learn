@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    html, body{
+      width: 100%;
+    }
+    body{
+      margin: 0px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    @media only screen and (max-width: 767px) {
+      #mkt-aplus{
+        width: 96%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer { 
+        display: flex; 
+        flex-wrap: wrap;
+        column-gap: 24px; 
+      }
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer > div{ 
+        width: calc(50% - 12px);
+      } 
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer img{
+        width: 100%;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"]  {
+        display: grid;
+        column-gap: 24px; 
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: max-content;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div  {
+        display: grid;
+        row-gap: 6px;
+        grid-auto-rows: max-content;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div img  {
+        width: 100%;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div > *  {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      
+      #mkt-aplus section[class*="single-side-image"] .image img{
+        width: 100%;
+      }
+
+      #mkt-aplus section[class="mkt-multiple-image-text"] {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr max-content;
+        gap: 12px;
+        min-height: 400px;
+        grid-template-areas: 
+          "big desc"
+          "small small"; 
+      }
+
+    }
+
+    @media only screen and (min-width: 768px) {
+      #mkt-aplus{
+        width: 80%;
+        margin: 0 auto;
+      }
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer { 
+        display: flex; 
+        column-gap: 24px; 
+      }
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer > div{ 
+        flex: 1; 
+      } 
+      #mkt-aplus section[class="mkt-four-image-text"] .image-text-layer img{
+        width: 100%;
+      }
+
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"]  {
+        display: grid;
+        column-gap: 24px; 
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: max-content;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div  {
+        display: grid;
+        column-gap: 12px; 
+        row-gap: 6px;
+        grid-template-columns: 135px 1fr;
+        grid-template-rows: 135px auto;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div img  {
+        width: 100%;
+      }
+      #mkt-aplus section[class="mkt-four-image-text-quadrant"] > div > div  {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      #mkt-aplus section[class*="mkt-single-side-image"] {
+        display: flex;
+        column-gap: 24px;
+      }
+      #mkt-aplus section[class*="mkt-single-side-image"].reverse{
+        flex-direction: row-reverse;
+      }
+      #mkt-aplus section[class*="mkt-single-side-image"] .image{
+        width: 40%;
+      }
+      #mkt-aplus section[class*="mkt-single-side-image"] .image img{
+        width: 100%;
+      }
+      #mkt-aplus section[class*="mkt-single-side-image"] .desc{
+        flex: 1;
+      }
+
+      #mkt-aplus section[class="mkt-multiple-image-text"] {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-rows: 1fr 140px;
+        gap: 12px;
+        min-height: 400px;
+        grid-template-areas: 
+          "big desc"
+          "big small"; 
+      }
+    }
+    
+   
+    #mkt-aplus section .text-container .underline{
+      text-decoration: underline;
+    }
+
+    #mkt-aplus section[class="mkt-three-image-text"] .image-text-layer {
+      display: flex; 
+      column-gap: 24px; 
+    }
+    #mkt-aplus section[class="mkt-three-image-text"] .image-text-layer > div {
+      flex: 1;
+    }
+    #mkt-aplus section[class="mkt-three-image-text"] .image-text-layer  img {
+      width: 100%;
+    }
+
+    #mkt-aplus section[class="mkt-tech-specs"] .tech-specs-wrap{
+      border: 1px solid #ccc;
+    }
+    #mkt-aplus section[class="mkt-tech-specs"] .tech-specs-wrap .tech-specs-item{
+      display: flex;
+      padding: 8px;
+    }
+    #mkt-aplus section[class="mkt-tech-specs"] .tech-specs-wrap .tech-specs-item:nth-of-type(2n){
+      background-color: #f5f5f5;
+    }
+    #mkt-aplus section[class="mkt-tech-specs"] .tech-specs-wrap .tech-specs-item > div:nth-of-type(1){
+      flex-basis: 200px;
+    }
+    #mkt-aplus section[class="mkt-tech-specs"] .tech-specs-wrap .tech-specs-item > div:nth-of-type(2){
+      flex: 1;
+    }
+    #mkt-aplus section[class="mkt-header-image-text"] img{
+      width: 100%;
+    }
+    #mkt-aplus section[class="mkt-company-logo"] img{
+      width: 100%;
+    }
+    #mkt-aplus section[class="mkt-text"]{
+      text-align: center;
+    }
+    #mkt-aplus section[class="mkt-image-text-overlay"]{
+      position: relative;
+    }
+    #mkt-aplus section[class="mkt-image-text-overlay"] img{
+      width: 100%;
+    }
+    #mkt-aplus section[class="mkt-image-text-overlay"] .image-text-container{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 40%;
+      padding: 16px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      transform: translateY(-50%);
+    }
+
+    #mkt-aplus section[class="mkt-comparison-table"] {
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table{
+      display: block;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    #mkt-aplus section[class="mkt-comparison-table"] table .fixed-column{
+      position: sticky;
+      left: 0;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table .holder{
+      background-color: #fff;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table tr{
+      display: flex;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table td{
+      display: flex;
+      align-items: center;
+      flex: 1;
+      min-width: 120px;
+      padding: 4px 6px;
+      word-break: break-all;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table td img{
+      width: 100%;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table .metrics-row{
+      border-top: 1px solid #ddd;
+    }
+    #mkt-aplus section[class="mkt-comparison-table"] table .metrics-row td:nth-of-type(1){
+      background-color: #f7f7f7;
+      border-right: 1px solid #ddd;
+    }
+
+    #mkt-aplus section[class="mkt-comparison-table"] table .metrics-row td.highlight{
+      background-color: #fff5ec;
+    }
+
+    
+
+    #mkt-aplus section[class="mkt-multiple-image-text"] .big-image {
+      grid-area: big;
+    }
+    #mkt-aplus section[class="mkt-multiple-image-text"] .big-image img,
+    #mkt-aplus section[class="mkt-multiple-image-text"] .goods-desc .goods-item
+    {
+      display: none;
+    }
+
+    #mkt-aplus section[class="mkt-multiple-image-text"] .big-image img.active,
+    #mkt-aplus section[class="mkt-multiple-image-text"] .goods-desc .goods-item.active
+    {
+      display: block;
+    }
+
+    #mkt-aplus section[class="mkt-multiple-image-text"] .goods-desc {
+      grid-area: desc;
+    }
+
+    #mkt-aplus section[class="mkt-multiple-image-text"] .small-image {
+      grid-area: small;
+      display: flex;
+      column-gap: 12px;
+    }
+    #mkt-aplus section[class="mkt-multiple-image-text"] .small-image > div {
+      cursor: pointer;
+    }
+    #mkt-aplus section[class="mkt-multiple-image-text"] .small-image > div > img {
+      opacity: 0.8;
+    }
+    #mkt-aplus section[class="mkt-multiple-image-text"] .small-image .active img {
+      border: 1px solid #000;
+      box-sizing: border-box;
+      opacity: 1;
+    }
+    
+  </style>
+<section id="mkt-aplus">
+  
+  {{#each moduleList}}
+    {{> (moduleType this "contentModuleType" ) }}
+  {{/each}}
+</section>
+<script src="http://192.10.20.247:3000/static/invoke-aplus.js"></script>
+</body>
+</html>

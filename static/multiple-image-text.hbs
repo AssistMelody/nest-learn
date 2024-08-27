@@ -1,0 +1,33 @@
+<section class='mkt-multiple-image-text'>
+  <div class='big-image'>
+    {{#each standardMultipleImageText.blocks}}
+      <img
+        class='{{#if @first}}active{{/if}}'
+        src='{{image.uploadDestinationId}}'
+        style='width: 100%;'
+      />
+    {{/each}}
+  </div>
+  <div class='goods-desc'>
+    {{#each standardMultipleImageText.blocks}}
+      <div class='goods-item {{#if @first}}active{{/if}}'>
+        <h4>{{headline.value}}</h4>
+         {{#each body.textList}}
+            <div class='text-container'>
+              {{{value}}}
+            </div>
+        {{/each}}
+      </div>
+    {{/each}}
+  </div>
+  <div class='small-image'>
+    {{#each standardMultipleImageText.blocks}}
+      <div class='{{#if @first}}active{{/if}}'>
+        <img src='{{image.uploadDestinationId}}' style='width: 100%;' />
+        <div class='text-container' style='text-align: center;'>
+          {{caption.value}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
